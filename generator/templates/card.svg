@@ -1,0 +1,50 @@
+<svg width="744" height="1039" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="744" height="1039" rx="40" fill="#111827"/>
+
+<rect x="25" y="25" width="694" height="989"
+rx="35"
+fill="#1f2937"
+stroke="#f5c542"
+stroke-width="8"/>
+
+
+<text x="372" y="90"
+fill="#f5c542"
+font-size="42"
+text-anchor="middle">
+QUEST DEMON
+</text>
+
+
+<text id="name"
+x="372"
+y="850"
+fill="white"
+font-size="38"
+text-anchor="middle">
+NAME
+</text>
+
+
+<text id="rarity"
+x="372"
+y="900"
+fill="#c084fc"
+font-size="30"
+text-anchor="middle">
+RARITY
+</text>
+
+
+<text id="price"
+x="372"
+y="950"
+fill="#f5c542"
+font-size="28"
+text-anchor="middle">
+PRICE
+</text>
+
+
+</svg>

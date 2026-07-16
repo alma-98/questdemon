@@ -1,6 +1,37 @@
 {
-  "version":"1.0",
-  "totalCards":600,
-  "season":"Genesis",
-  "cards":[]
+  "version": "1.0",
+  "season": "Genesis",
+  "totalCards": 600,
+  "cards": [
+    {
+      "cardCode": "QD-0001",
+      "name": "Cute Skeleton",
+      "type": "Character",
+      "race": "Undead",
+      "element": "Dark",
+      "rarity": "Common",
+      "price": 100000,
+      "playCount": 100,
+      "goldBonus": 100,
+      "diamondBonus": 1,
+      "energy": 10,
+      "luck": 1,
+      "questPower": 2
+    },
+    {
+      "cardCode": "QD-0002",
+      "name": "Ghost Bunny",
+      "type": "Character",
+      "race": "Undead",
+      "element": "Dark",
+      "rarity": "Rare",
+      "price": 250000,
+      "playCount": 400,
+      "goldBonus": 300,
+      "diamondBonus": 3,
+      "energy": 20,
+      "luck": 5,
+      "questPower": 5
+    }
+  ]
 }
