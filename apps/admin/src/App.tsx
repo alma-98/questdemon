@@ -1,25 +1,35 @@
+import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import CardStudio from "./pages/CardStudio";
 
-function App(){
+export default function App(){
 
 return(
+
 <div style={{
-background:"#09090f",
+display:"flex",
+background:"#080812",
 color:"white",
-minHeight:"100vh",
-padding:"30px"
+minHeight:"100vh"
 }}>
 
-<Dashboard />
+<Sidebar/>
+
+<div style={{
+padding:30,
+flex:1
+}}>
+
+<Dashboard/>
 
 <hr/>
 
-<CardStudio />
+<CardStudio/>
 
 </div>
+
+</div>
+
 )
 
 }
-
-export default App;

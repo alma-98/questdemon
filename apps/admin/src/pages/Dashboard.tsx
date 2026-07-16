@@ -1,39 +1,43 @@
+import CardStat from "../components/CardStat";
+
 export default function Dashboard(){
 
-return (
+return(
+
 <div>
 
-<h1>🃏 Quest Demon Admin</h1>
+<h1>Dashboard Admin</h1>
 
 <div style={{
 display:"grid",
 gridTemplateColumns:"repeat(4,1fr)",
-gap:"20px"
+gap:20
 }}>
 
-<div>
-<h2>600</h2>
-<p>Total Cards</p>
-</div>
+<CardStat
+title="Total Cards"
+value="600"
+/>
 
-<div>
-<h2>0</h2>
-<p>Players</p>
-</div>
+<CardStat
+title="Players"
+value="0"
+/>
 
-<div>
-<h2>0</h2>
-<p>Marketplace</p>
-</div>
+<CardStat
+title="Marketplace"
+value="0"
+/>
 
-<div>
-<h2>0</h2>
-<p>Tickets</p>
-</div>
-
-</div>
+<CardStat
+title="Tickets"
+value="0"
+/>
 
 </div>
+
+</div>
+
 )
 
 }
