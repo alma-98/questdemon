@@ -1,35 +1,45 @@
-import Sidebar from "./components/Sidebar";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
 import Dashboard from "./pages/Dashboard";
 import CardStudio from "./pages/CardStudio";
+import PublisherLayout from "./layouts/PublisherLayout";
+import PublisherDashboard from "./pages/publisher/Dashboard";
 
-export default function App(){
+function Home() {
+  return (
+    <div
+      style={{
+        background:"#080812",
+        color:"#fff",
+        minHeight:"100vh",
+        padding:30
+      }}
+    >
+      <Dashboard />
 
-return(
+      <hr />
 
-<div style={{
-display:"flex",
-background:"#080812",
-color:"white",
-minHeight:"100vh"
-}}>
+      <CardStudio />
+    </div>
+  );
+}
 
-<Sidebar/>
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
 
-<div style={{
-padding:30,
-flex:1
-}}>
+        <Route path="/" element={<Home />} />
 
-<Dashboard/>
+        <Route path="/publisher" element={<PublisherLayout />}>
+          <Route index element={<PublisherDashboard />} />
+        </Route>
 
-<hr/>
-
-<CardStudio/>
-
-</div>
-
-</div>
-
-)
-
+      </Routes>
+    </BrowserRouter>
+  );
 }
