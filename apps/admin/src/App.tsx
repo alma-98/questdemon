@@ -1,45 +1,75 @@
 import {
-  BrowserRouter,
-  Routes,
-  Route
+BrowserRouter,
+Routes,
+Route
 } from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard";
 import CardStudio from "./pages/CardStudio";
+
 import PublisherLayout from "./layouts/PublisherLayout";
 import PublisherDashboard from "./pages/publisher/Dashboard";
+import MasterCards from "./pages/publisher/MasterCards";
 
-function Home() {
-  return (
-    <div
-      style={{
-        background:"#080812",
-        color:"#fff",
-        minHeight:"100vh",
-        padding:30
-      }}
-    >
-      <Dashboard />
+function Home(){
 
-      <hr />
+return(
 
-      <CardStudio />
-    </div>
-  );
+<div
+style={{
+background:"#080812",
+color:"#fff",
+minHeight:"100vh",
+padding:30
+}}
+>
+
+<Dashboard/>
+
+<hr/>
+
+<CardStudio/>
+
+</div>
+
+)
+
 }
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
+export default function App(){
 
-        <Route path="/" element={<Home />} />
+return(
 
-        <Route path="/publisher" element={<PublisherLayout />}>
-          <Route index element={<PublisherDashboard />} />
-        </Route>
+<BrowserRouter>
 
-      </Routes>
-    </BrowserRouter>
-  );
+<Routes>
+
+<Route
+path="/"
+element={<Home/>}
+/>
+
+<Route
+path="/publisher"
+element={<PublisherLayout/>}
+>
+
+<Route
+index
+element={<PublisherDashboard/>}
+/>
+
+<Route
+path="master-cards"
+element={<MasterCards/>}
+/>
+
+</Route>
+
+</Routes>
+
+</BrowserRouter>
+
+)
+
 }
