@@ -1,23 +1,78 @@
-export default function Sidebar(){
+import logo from "../assets/logo.png";
 
-return (
-<div style={{
-width:220,
-background:"#11111b",
-padding:20,
-height:"100vh"
-}}>
+export default function Sidebar() {
 
-<h2>👹 Quest Demon</h2>
+  const menu = [
+    "Dashboard",
+    "Master Cards",
+    "Card Studio",
+    "Card Generator",
+    "Marketplace",
+    "Collection",
+    "Customer Service",
+    "Settings"
+  ];
 
-<p>Dashboard</p>
-<p>Card Studio</p>
-<p>Generator</p>
-<p>Marketplace</p>
-<p>Customer Service</p>
-<p>Settings</p>
+  return (
+    <aside
+      style={{
+        width: 250,
+        background: "#12061d",
+        color: "#fff",
+        padding: 20,
+        minHeight: "100vh",
+        borderRight: "1px solid #2f184d"
+      }}
+    >
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: 30
+        }}
+      >
+        <img
+          src={logo}
+          alt="Quest Demon"
+          style={{
+            width: 120,
+            height: 120,
+            objectFit: "contain",
+            marginBottom: 12
+          }}
+        />
 
-</div>
-)
+        <h2
+          style={{
+            margin: 0,
+            color: "#f5c542"
+          }}
+        >
+          QUEST DEMON
+        </h2>
 
+        <small style={{ color: "#b8a7ff" }}>
+          Publisher CMS
+        </small>
+      </div>
+
+      {menu.map((item) => (
+        <button
+          key={item}
+          style={{
+            width: "100%",
+            padding: "14px",
+            marginBottom: "10px",
+            borderRadius: "12px",
+            border: "none",
+            cursor: "pointer",
+            background: "#6d28d9",
+            color: "#fff",
+            fontWeight: 700
+          }}
+        >
+          {item}
+        </button>
+      ))}
+    </aside>
+  );
 }
