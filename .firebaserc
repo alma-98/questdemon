@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "coral-balancer-399312"
+  },
+  "targets": {
+    "coral-balancer-399312": {
+      "hosting": {
+        "questdemon": [
+          "questdemon"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

@@ -1,1 +1,31 @@
-{"name":"questdemon","private":true,"workspaces":["apps/*","packages/*"],"scripts":{"dev:web":"npm --workspace apps/web run dev","dev:admin":"npm --workspace apps/admin run dev"},"dependencies":{"@hookform/resolvers":"^5.4.0","firebase":"^12.16.0","fs-extra":"^11.3.6","html2canvas":"^1.4.1","jspdf":"^4.2.1","qrcode":"^1.5.4","react-hook-form":"^7.81.0","sharp":"^0.35.3","uuid":"^14.0.1","zod":"^4.4.3"}}
+{
+  "name": "questdemon",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:admin": "npm --workspace apps/admin run dev",
+    "dev": "npm --workspace apps/admin run dev",
+    "build": "npm --workspace apps/admin run build"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
+    "firebase": "^12.16.0",
+    "fs-extra": "^11.3.6",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "qrcode": "^1.5.4",
+    "qrcode.react": "^4.2.0",
+    "react-hook-form": "^7.81.0",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.1",
+    "sharp": "^0.35.3",
+    "uuid": "^14.0.1",
+    "xlsx": "^0.18.5",
+    "zod": "^4.4.3"
+  }
+}
